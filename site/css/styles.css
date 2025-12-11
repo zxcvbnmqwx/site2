@@ -1,0 +1,1137 @@
+
+/* styles.css - Оформление сайта The Beatles */
+
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 80vh;
+}
+
+/* Заголовки */
+h1 {
+    color: #1a5276;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 25px 0 15px 0;
+    font-size: 1.8em;
+    border-left: 5px solid #e74c3c;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #34495e;
+    margin: 20px 0 10px 0;
+    font-size: 1.4em;
+}
+
+/* Навигационное меню */
+.nav-menu {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    padding: 15px 0;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-menu .current {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Основной контент */
+.content {
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+/* Списки */
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e8f4fc;
+    transition: background-color 0.3s ease;
+}
+
+/* Изображения */
+.beatles-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+}
+
+.album-cover {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.album-cover:hover {
+    transform: scale(1.05);
+}
+
+/* Ссылки */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.download-link {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.download-link:hover {
+    background: #219a52;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.
+
+katie, [16.10.2025 12:26]
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+/* Горизонтальная линия */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3498db, transparent);
+    margin: 30px 0;
+}
+
+/* Специальные классы */
+.highlight {
+    background: linear-gradient(120deg, #a8e6cf 0%, #dcedc1 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #27ae60;
+    margin: 20px 0;
+}
+
+.quote {
+    font-style: italic;
+    color: #7f8c8d;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Сетка для альбомов */
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.album-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.album-year {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+Создам полный CSS для всех страниц: Disc.html, Links.html и Film.html.
+
+---
+
+### Добавляем в styles.css:
+/* ===== СТИЛИ ДЛЯ DISC.HTML ===== */
+
+/* Фильтры дискографии */
+.disc-filters {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
+    color: white;
+}
+
+.disc-filters h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: white;
+    color: #667eea;
+    border-color: white;
+}
+
+/* Статистика */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid;
+    border-image: linear-gradient(135deg, #667eea, #764ba2) 1;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Улучшенная сетка альбомов */
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.album-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.album-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--album-color, #667eea), #764ba2);
+}
+
+.album-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.album-year {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.album-card h3 {
+    color: #2c3e50;
+    margin: 15px 0 8px 0;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.album-date {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.album-label {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.album-highlights {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.song {
+    display: inline-block;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
+}
+
+.album-status {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    color: #856404;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 0.9em;
+    border-left: 4px solid #f1c40f;
+    font-weight: 500;
+}
+
+/* Хиты */
+.hits-section {
+    margin: 50px 0;
+}
+
+.hits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.hit-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+border-left: 5px solid;
+    border-image: linear-gradient(135deg, #667eea, #764ba2) 1;
+    transition: transform 0.3s ease;
+}
+
+.hit-card:hover {
+    transform: translateX(5px);
+}
+
+.hit-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hit-album {
+    color: #e74c3c;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.hit-stats {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Периоды творчества */
+.periods-section {
+    margin: 50px 0;
+}
+
+.periods-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 35px 0;
+}
+
+.period-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-top: 5px solid;
+    transition: transform 0.3s ease;
+}
+
+.period-card:hover {
+    transform: translateY(-5px);
+}
+
+.period-card.early {
+    border-top-color: #3498db;
+}
+
+.period-card.transition {
+    border-top-color: #e67e22;
+}
+
+.period-card.studio {
+    border-top-color: #e74c3c;
+}
+
+.period-year {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.period-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.period-card p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.period-albums {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.album-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    color: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* Сборники */
+.compilations-section {
+    margin: 50px 0;
+}
+
+.compilations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.compilation-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #27ae60;
+    transition: all 0.3s ease;
+}
+
+.compilation-card:hover {
+    transform: translateX(5px);
+    border-left-color: #2ecc71;
+}
+
+.compilation-card h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.compilation-card p {
+    color: #7f8c8d;
+    margin: 0;
+}
+
+/* CTA секция */
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    animation: float 20s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(-20px, -20px) rotate(360deg); }
+}
+
+.cta-section h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-section p {
+    margin-bottom: 25px;
+    opacity: 0.9;
+    font-size: 1.1em;
+    position: relative;
+    z-index: 2;
+}
+
+.button.large {
+    padding: 15px 35px;
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 2;
+}
+
+.button.large:hover {
+    background: white;
+    color: #667eea;
+}
+
+/* ===== СТИЛИ ДЛЯ FILM.HTML ===== */
+
+.film-hero {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.film-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.film-stat {
+background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #e74c3c;
+}
+
+.film-stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 8px;
+}
+
+.film-stat-label {
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+/* Таблица фильмов */
+.films-table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.films-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.films-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.films-table td {
+    padding: 20px;
+    border-bottom: 1px solid #ecf0f1;
+    vertical-align: top;
+}
+
+.films-table tr:last-child td {
+    border-bottom: none;
+}
+
+.films-table tr:hover {
+    background: #f8f9fa;
+}
+
+.film-poster {
+    width: 80px;
+    height: 120px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Факты о фильмах */
+.film-facts-section {
+    margin: 50px 0;
+}
+
+.film-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 35px 0;
+}
+
+.film-fact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid;
+    transition: transform 0.3s ease;
+}
+
+.film-fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.film-fact-card:nth-child(1) { border-top-color: #3498db; }
+.film-fact-card:nth-child(2) { border-top-color: #e67e22; }
+.film-fact-card:nth-child(3) { border-top-color: #e74c3c; }
+.film-fact-card:nth-child(4) { border-top-color: #9b59b6; }
+.film-fact-card:nth-child(5) { border-top-color: #27ae60; }
+
+.film-fact-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.film-fact-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.film-fact-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ecf0f1;
+    color: #7f8c8d;
+}
+
+.film-fact-card li:last-child {
+    border-bottom: none;
+}
+
+.film-fact-card li::before {
+    content: '🎬';
+    margin-right: 10px;
+}
+
+/* ===== СТИЛИ ДЛЯ LINKS.HTML ===== */
+
+.sources-hero {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.sources-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.source-category {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid;
+}
+
+.source-category:nth-child(1) { border-top-color: #3498db; }
+.source-category:nth-child(2) { border-top-color: #e74c3c; }
+.source-category:nth-child(3) { border-top-color: #27ae60; }
+.source-category:nth-child(4) { border-top-color: #9b59b6; }
+
+.source-category h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.source-list {
+    list-style: none;
+    padding: 0;
+}
+
+.source-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.source-item:last-child {
+    border-bottom: none;
+}
+
+.source-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.source-link:hover {
+    color: #e74c3c;
+}
+
+.source-description {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Книги и публикации */
+.books-section {
+    margin: 50px 0;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.book-card {
+    background: white;
+    padding: 25px;
+border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e67e22;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateX(5px);
+}
+
+.book-card h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.book-card p {
+    color: #7f8c8d;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Таблица источников */
+.sources-table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.sources-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sources-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.sources-table td {
+    padding: 20px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.sources-table tr:last-child td {
+    border-bottom: none;
+}
+
+.sources-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Юридическое примечание */
+.legal-notice {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    border: 2px solid #f1c40f;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.legal-notice h3 {
+    color: #856404;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legal-notice p {
+    color: #856404;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    /* Disc.html */
+    .filter-buttons {
+        justify-content: flex-start;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .albums-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .periods-timeline {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Film.html */
+    .films-table {
+        overflow-x: auto;
+    }
+    
+    .films-table table {
+        min-width: 600px;
+    }
+    
+    .film-facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Links.html */
+    .sources-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sources-table {
+        overflow-x: auto;
+    }
+    
+    .sources-table table {
+        min-width: 500px;
+    }
+}
+
+/* Анимации */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: slideIn 0.6s ease-out;
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
